@@ -1,0 +1,21 @@
+# https://discord.com/developers/docs/resources/channel
+# https://discord.com/developers/docs/resources/message
+
+concept: session
+purpose:
+	to allow a game master to find players for an rpg session
+state:
+	open, closed
+actions:
+	setDescription(d:text)
+	setMoodImage(i:image)
+	setChannel(c:channel)
+	setDate(d:date)
+	setVenue(v:venue)
+	setGameMaster(u:user)
+	join(p:player)
+	kick(p:player)
+operational principle:
+	kick may only be called by the game master of the session or by the player himself
+  description, moodImage and date may only be set by the game master
+	channel may only be set by the sessionManager

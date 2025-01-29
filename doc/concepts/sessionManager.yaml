@@ -1,0 +1,16 @@
+concept: sessionManager
+purpose:
+	to allow game masters to manage their session
+state:
+	registerable:set(session), full:set(session), archived:set(session)
+actions:
+	create(s:session)
+    when s not in registerable,full,archived:add s to registerable
+	delete(s:session)
+    when s not in archived and in registerable or fill:move s to archived
+  list(sys:system,venue:venue)
+    return the set of sessions in registerable or full 
+operational principle:
+  only game masters may create a session
+  only the game master that created the session as well as the bot may delete it 
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg 
+    width="256" 
+    height="256" 
+    viewBox="0 0 256 256" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Background circle (optional) -->
+  <circle 
+    cx="128" 
+    cy="128" 
+    r="120" 
+    fill="#5865F2" 
+  />
+
+  <!-- D20 Outline -->
+  <!-- This uses a combination of straight lines forming a geometric shape reminiscent of a d20. -->
+  <path
+    d="M128 40 
+       L70 70 
+       L36 128 
+       L70 186 
+       L128 216 
+       L186 186 
+       L220 128 
+       L186 70 
+       L128 40Z"
+    stroke="#FFFFFF"
+    stroke-width="8"
+    fill="none"
+    stroke-linejoin="round"
+  />
+
+  <!-- Clock Face -->
+  <!-- We place a small circle + hands to symbolize a clock in the center. -->
+  <circle
+    cx="128"
+    cy="128"
+    r="32"
+    fill="#FFFFFF"
+    stroke="#404EED"
+    stroke-width="4"
+  />
+  <!-- Hour hand -->
+  <line
+    x1="128"
+    y1="128"
+    x2="128"
+    y2="108"
+    stroke="#5865F2"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+  <!-- Minute hand -->
+  <line
+    x1="128"
+    y1="128"
+    x2="142"
+    y2="128"
+    stroke="#5865F2"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+
+  <!-- Optional Discord-like "wings" near the edges of the circle (very subtle, just for a flourish). -->
+  <!-- Left wing -->
+  <path
+    d="M75 45 C60 60, 60 90, 75 105"
+    stroke="#99AAB5"
+    stroke-width="3"
+    fill="none"
+    stroke-linecap="round"
+  />
+  <!-- Right wing -->
+  <path
+    d="M181 45 C196 60, 196 90, 181 105"
+    stroke="#99AAB5"
+    stroke-width="3"
+    fill="none"
+    stroke-linecap="round"
+  />
+
+</svg>
